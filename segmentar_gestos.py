@@ -26,7 +26,7 @@ PASTA_SEGMENTADOS = f"{PASTA_ARQUIVOS}\\segmentados\\"
 # Classes dos gestos coletados
 CLASSES = ["esquerda", "direita", "cima"]
 
-# Número de gestos coletados por tipo
+# Número estimado de gestos coletados por tipo
 NUM_GESTOS = 30
 
 # Aproximadamente 476 Hz nos arquivos coletados
