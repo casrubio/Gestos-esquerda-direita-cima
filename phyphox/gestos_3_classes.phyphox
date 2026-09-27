@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phyphox version="1.20" locale="pt">
+	<title>Gestos 3 Classes</title>
+	<category>Machine Learning</category>
+	<icon format="string">G3C</icon>
+	<description>Coleta de acelerômetro e giroscópio para classificação dos gestos esquerda, direita e cima.</description>
+	<data-containers>
+		<container size="50000">accX</container>
+		<container size="50000">accY</container>
+		<container size="50000">accZ</container>
+		<container size="50000">accT</container>
+		<container size="50000">gyroX</container>
+		<container size="50000">gyroY</container>
+		<container size="50000">gyroZ</container>
+		<container size="50000">gyroT</container>
+	</data-containers>
+	<input>
+		<sensor type="accelerometer" rate="0" rateStrategy="request">
+			<output component="x">accX</output>
+			<output component="y">accY</output>
+			<output component="z">accZ</output>
+			<output component="t">accT</output>
+		</sensor>
+		<sensor type="gyroscope" rate="0" rateStrategy="request">
+			<output component="x">gyroX</output>
+			<output component="y">gyroY</output>
+			<output component="z">gyroZ</output>
+			<output component="t">gyroT</output>
+		</sensor>
+	</input>
+	<views>
+		<view label="Coleta">
+			<info label="3 classes: ESQUERDA, DIREITA e CIMA. Faça uma pausa curta entre as repetições."/>
+			<graph label="Acelerômetro" labelX="Tempo" unitX="s" labelY="Aceleração" unitY="m/s²" partialUpdate="true">
+				<input axis="x">accT</input>
+				<input axis="y">accX</input>
+				<input axis="x">accT</input>
+				<input axis="y">accY</input>
+				<input axis="x">accT</input>
+				<input axis="y">accZ</input>
+			</graph>
+			<graph label="Giroscópio" labelX="Tempo" unitX="s" labelY="Velocidade angular" unitY="rad/s" partialUpdate="true">
+				<input axis="x">gyroT</input>
+				<input axis="y">gyroX</input>
+				<input axis="x">gyroT</input>
+				<input axis="y">gyroY</input>
+				<input axis="x">gyroT</input>
+				<input axis="y">gyroZ</input>
+			</graph>
+			<info label="Protocolo: ~0,5 s parado + ~1 s movimento + ~0,5 s parado. Repita 30 vezes por classe."/>
+			<info label="Mantenha a orientação do telefone constante durante a coleta."/>
+		</view>
+	</views>
+	<export>
+		<set name="Sensores">
+			<data name="Tempo acelerômetro (s)">accT</data>
+			<data name="Acelerômetro X (m/s²)">accX</data>
+			<data name="Acelerômetro Y (m/s²)">accY</data>
+			<data name="Acelerômetro Z (m/s²)">accZ</data>
+			<data name="Tempo giroscópio (s)">gyroT</data>
+			<data name="Giroscópio X (rad/s)">gyroX</data>
+			<data name="Giroscópio Y (rad/s)">gyroY</data>
+			<data name="Giroscópio Z (rad/s)">gyroZ</data>
+		</set>
+	</export>
+</phyphox>
