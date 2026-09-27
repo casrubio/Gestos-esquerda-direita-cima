@@ -2,8 +2,7 @@
 Projeto da Disciplina de Mineração de Dados do Curso de Especialização em IA e Ciência de Dados da **PUC-PR**.
 
 ## Objetivo:
-Coleta via celular com o aplicativo [_phyphox_](https://phyphox.org/) para registro de movimentos<br>
-para a esquerda, direita e cima e avaliação com algoritmos de classificação.
+Coleta via celular com o aplicativo [_phyphox_](https://phyphox.org/) para registro de movimentos para a esquerda, direita e cima e avaliação com algoritmos de classificação.
 
 ### Descrição das Pastas:
 
@@ -13,7 +12,7 @@ para a esquerda, direita e cima e avaliação com algoritmos de classificação.
 | *Gestos\base_dados* | Pasta da base de dados gerada a partir dos exemplos obtidos e das imagens dos sinais de cada gesto detectado. |
 | *Gestos\coletados* | Medições dos gestos do experimento registradas com o aplicativo [_phyphox_](https://phyphox.org/). |
 | *Gestos\segmentados* | Arquivos dos gestos identificados. |
-| *phyphox* | Pasta do arquivo de configuração do experimento no [_phyphox_](https://phyphox.org/) especificando o uso de acelerômetro e giroscópio<br>para detecção dos gestos. |
+| *phyphox* | Pasta do arquivo de configuração do experimento no [_phyphox_](https://phyphox.org/) especificando o uso de acelerômetro e giroscópio para detecção dos gestos. |
 
 ### Descrição dos Arquivos:
 
