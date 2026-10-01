@@ -1,5 +1,4 @@
 # Projeto de Mineração de Séries Temporais
-Projeto da Disciplina de Mineração de Dados do Curso de Especialização em IA e Ciência de Dados da **PUC-PR**.
 
 ## Objetivo:
 Coleta via celular com o aplicativo [_phyphox_](https://phyphox.org/) para registro de movimentos para a esquerda, direita e cima e avaliação com algoritmos de classificação.
@@ -21,7 +20,8 @@ Coleta via celular com o aplicativo [_phyphox_](https://phyphox.org/) para regis
 | *gerar_base_dados.py* | Código *Python* de criação da base de dados a partir dos gestos detectados por classe. |
 | *segmentar_gestos.py* | Código *Python* de segmentação dos gestos de cada classe a partir dos exemplos coletados também por classe. |
 | *requirements.txt* | Bibliotecas utilizadas nos códigos *Python*. |
-| *gestos_3_classes.ipynb* | *Jupyter Notebook* de aplicação de algoritmos de classificação para previsão dos gestos do experitmento. |
+| *gestos_3_classes.ipynb* | *Notebook* de avaliação dos modelos de classificação para previsão dos gestos do experimento. |
+| [*gestos_3_classes.ipynb*](https://colab.research.google.com/drive/16XK1yB4rrIWCWniyHkJi_7weqZIsUHJJ) | *Link* do *Notebook* no *Google Colab*. |
 
 ### Ordem de execução dos códigos Python:
 - *segmentar_gestos.py*;
